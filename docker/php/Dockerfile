@@ -12,6 +12,7 @@ RUN usermod -u 1000 ${WEB_USER} \
 
 
 RUN docker-php-ext-install pdo_mysql
+RUN docker-php-ext-install opcache
 
 RUN apt-get -yqq update
 RUN apt-get -yqq install exiftool
