@@ -1,0 +1,1 @@
+docker run --rm --interactive --tty -v /${PWD}:/src -it node npm $* --prefix src
